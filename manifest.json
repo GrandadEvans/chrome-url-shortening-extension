@@ -1,0 +1,39 @@
+{
+    "name": "Right Click URL Shortener",
+    "version": "3.0.2",
+    "manifest_version": 2,
+
+    "description": "Right click and get shortened URLs for the page you're on, links, images & video/audio clips.",
+    "icons": {
+      "16": "img/Internet-url-icon-16px.png",
+      "48": "img/Internet-url-icon-48px.png",
+      "64": "img/Internet-url-icon-64px.png",
+      "128": "img/Internet-url-icon-128px.png",
+      "256": "img/Internet-url-icon-256px.png"
+    },
+
+    "author": "John Evans<john@grandadevans.com>",
+    "background" : {
+      "scripts": ["js/background.js"]
+    },
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+    "offline_enabled": false,
+    "short_name": "URL Shortener",
+    "permissions" : [
+      "contextMenus",
+      "notifications",
+      "http://gewd.co/*"
+    ],
+    "web_accessible_resources": [
+      "css/notification.css",
+      "html/background.html",
+      "html/notification.html",
+      "img/Internet-url-icon-16px.png",
+      "img/Internet-url-icon-48px.png",
+      "img/Internet-url-icon-64px.png",
+      "img/Internet-url-icon-128px.png",
+      "js/background.js",
+      "js/notification.js"
+   ]
+}
+
